@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html,
+body {
+    font-family: 'Poppins' !important;
+    background-color: #ffffff !important;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+.poppins {
+    text-align: center;
+    font-weight: bolder;
+}
+/* NAV */
+.navbar {
+    padding: 2.5rem 1rem !important;
+}
+
+.navbar-themed .navbar-nav .nav-link {
+    color: black !important;
+}
+
+.nav-link::after,
+.navbar-brand::after {
+    width: 0;
+    transition: width 0.35s
+}
+
+.nav-link:hover::after,
+.navbar-brand:hover::after {
+    width: 100%
+}
+
+.link-after,
+.nav-link::after,
+.navbar-brand::after,
+.nav-item.active::after {
+    content: "";
+    display: block;
+    height: 0.15em;
+    background: #02faa3;
+}
+
+.nav-item.active {
+    font-weight: bold
+}
+
+.nav-item.active::after {
+    width: 100% !important
+}
+
+/* AVATAR */
+
+.main img {
+    display: block;
+    margin: 0px auto;
+    border-radius: 100%;
+    width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    .main img {
+        width: 100% !important;
+    }
+}
+
+.main h1 {
+    font-size: 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+/* LINKS */
+
+.main .features {
+    text-align: center;
+}
+
+.main .features a {
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+}
+
+.main .features a:hover {
+    color: #FF7709;
+
+}
+
+/* CAPPUCCINO */
+
+.project.card {
+    border-radius: 15px;
+    text-decoration: none !important;
+    margin: 10px auto;
+    transition: transform 400ms;
+}
+
+.project.card .card-img-top {
+    border-radius: 15px 15px 0 0;
+}
+
+.project.card:hover:not(.post) {
+    transform: translateY(-8px);
+    box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
+}
+
+.card-body h5 {
+    color: #343a40;
+    font-weight: normal;
+}
+
+.card-body p {
+    color: #343a40;
+    font-weight: 100;
+}
+.cappuccino {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.express {
+    width: 100%;
+    
+}
+.cappuccino strong {
+    margin-bottom: 3rem;
+}
+.cappuccino h1 {
+    margin-bottom: 3rem;
+    font-size: 40px;
+    color: #212529;
+    font-weight: bolder;
+}
+.cappuccino h2 {
+    font-weight: bolder;
+    line-height: 1.2;
+    color: #212529;
+    font-size: 32px;
+}
+.cappuccino p {
+    margin-bottom: 2rem;
+}
+.card-body span {
+    font-weight: 100;
+}
+
+.date {
+    color: #8a2be2a1;
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+.illustrator_coffe {
+    max-width: 200px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+}
+/* TIME LINE */
+
+.john {
+    width: 50%;
+}
+
+.feel {
+    width: 50%;
+    
+    border-left: 10px solid var(--pink);
+    
+}
+
+.how {
+    display: flex;
+}
+
+.drake {
+    background-color: #f8f9fa;
+    width: 90%;
+    padding: 45px;
+    border-bottom: 1px dashed #343a40;
+
+}
+
+.boll_circle {
+    background: black;
+    padding: 20px;
+    width: 0px;
+    margin: -25px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.boll_center {
+    padding: 10px;
+    background: white;
+    width: 10px;
+    position: absolute;
+    margin: -15px;
+    border-radius: 100%;
+}
+
+/* MODE ROCKSTAR */
+
+.feel h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.feel h2 {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.feel p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.bakery {
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.column_lef {
+    width: 50%;
+}
+
+.column_rig {
+    width: 50%;
+}
+
+.onion {
+    display: flex;
+    width: 90%;
+}
+
+.loading_1 {
+    width: 90%;
+    background: red;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.loading_2 {
+    padding: 5px;
+    width: 10%;
+    background: black;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.mode_rockstar {
+    margin-bottom: 4rem;
+}
+
+.names_features {
+    display: flex;
+    width: 90%;
+}
+
+.software {
+    width: 50%;
+}
+
+.porcents {
+    width: 50%;
+    text-align: end;
+}
+
+.docker {
+    width: 80%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .docker {
+        width: 100%;
+    }
+
+    .bakery {
+        display: block;
+    }
+
+    .onion {
+        width: 100%;
+    }
+
+    .column_rig {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .column_lef {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .names_features {
+        width: 100%;
+    }
+
+    .mode_rockstar {
+        font-size: 20px;
+    }
+
+    .john {
+        width: 0%;
+    }
+
+    .feel {
+        margin: auto;
+        width: 90%;
+    }
+
+    .drake {
+        padding: 20px;
+        margin: auto;
+    }
+}
